@@ -1,8 +1,9 @@
 const db = require('./db/connection')
+const selectAction = require("./lib/prompts")
+const cTable = require("console.table");
 
 
-// DB connection
-db.connect(err => {
-    if (err) throw err;
-    console.log('Database connected.');
-});
+
+selectAction()
+
+
