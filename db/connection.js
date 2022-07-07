@@ -6,13 +6,7 @@ const db = mysql.createConnection({
   user: 'root',
   // Your MySQL password
   password: 'root',
-  database: 'election'
-});
-
-// DB connection
-db.connect(err => {
-  if (err) throw err;
-  console.log('Database connected.');
+  database: 'organization'
 });
 
 module.exports = db;
