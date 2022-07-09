@@ -1,24 +1,49 @@
 INSERT INTO department (name) 
 VALUES
-('Executive'),
+('Corporate'),
+('Admin'),
+('Accounting'),
 ('Sales'),
-('Manufacturing'),
-('Engineering'),
-('Operations');
+('Distribution'),
+("Human Resources");
 
 INSERT INTO role (title, salary, department_id)
 VALUES
-('CEO', 11000000, 1),
-('VP', 500000, 1),
-('Manager', 200000, 1),
-('Field Sales', 200000, 2),
-('Sales Manager', 225000, 2),
-('Line Operator', 80000, 3),
-('Engineer', 150000, 4),
-('Developer', 150000, 4),
-('Machinist', 90000, 3),
-('Support Analyst', 75000, 5),
-('Database Administrator', 150000, 5);
+('CEO', 1000000, 1),
+('CFO', 500000, 1),
+('VP', 300000, 1),
+('Regional Sales Manager', 80000, 4),
+('Sales Representative', 50000, 4),
+('Receptionist', 40000, 2),
+('Temporary', 30000, 2),
+('Supplier Relations', 50000, 5),
+('Warehouse', 45000, 5),
+('Human Resources Representative', 75000, 6),
+('Accountant', 90000, 3),
+('Customer Service', 40000, 4),
+('Quality Assurance', 40000, 5);
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES
+('Jan','Levinson-Gould',3,3),
+('Alan','Brand',1,NULL),
+('David','Wallace',2,1),
+('Pam','Beasley',6,11),
+('Ryan','Howard',7,11),
+('Meredith','Palmer',8,11),
+('Creed','Bratton',13,18),
+('Kevin','Malone',11,9),
+('Angela','Martin',11,11),
+('Oscar','Martinez',11,9),
+('Michael','Scott',4,1),
+('Jim','Halpert',5,11),
+('Dwight','Schrute',5,11),
+('Stanley','Hudson',5,11),
+('Kelly','Kapoor',12,11),
+('Phyllis','Lapin',5,11),
+('Roy','Anderson',9,18),
+('Daryl','Philbin',9,11),
+('Toby','Flenderson',10,3);
 
 
 
