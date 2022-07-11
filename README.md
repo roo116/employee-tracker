@@ -1,29 +1,64 @@
-# employee-tracker
 
-AS A business owner
-I WANT to be able to view and manage the departments, roles, and employees in my company
-SO THAT I can organize and plan my business
+  
+# Project Title - Employee-Tracker
+  
+  
+## Project Description
+Adds and modifies employees in a mysql database
+  
+## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  
+## Installation
+clone the repo from the git hub account listed in this readme, and run npm i to install the dependencies.
+
+### Setting up the sample database
+got into the local repo at the root level.  
+run `source db/db.sql  
+run `source db/schema.sql  
+run `source db/seeds.sql  
+  
+## Usage
+From a terminal window, type index.js and you'll be greeted with a menu of choices.  Select the appropriate choice and follow the prompts.  
+
+NOTE:  CURRENTLY THE FUNCTIONALITY IS FAILING.  When you select something from the menu, the query returns data but then the application just hangs up.  So you have to restart the application after every selection.
+
+to start the application 
+Node Index.js
+after a query runs, click ctrl-c and restart the application and select your next query.
+
+Images   
+![](./screen-shots/menu.png)  
+![](./screen-shots/image3.png)
 
 
 
 
 
+## Known issues
+outstanding issues can be found here 
+After a selection is run, the prompt never returns.  
+Updating the employee is not working. 
 
-WHEN I choose to add a department
-THEN I am prompted to enter the name of the department and that department is added to the database
-WHEN I choose to add a role
-THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
-WHEN I choose to add an employee
-THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
-WHEN I choose to update an employee role
-THEN I am prompted to select an employee to update and their new role and this information is updated in the database
+other outstanding issues can be found here.
+"https://github.com/roo116/employee-tracker/issues"
+  
+## License
 
-
-GIVEN a command-line application that accepts user input WHEN I start the application
-THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
-WHEN I choose to view all departments
-THEN I am presented with a formatted table showing department names and department ids
-WHEN I choose to view all roles
-THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
-WHEN I choose to view all employees
-THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
+  
+## Contributing
+Fix all the stuff that isn't working yet!!  That would be great.
+  
+## Tests
+none
+  
+## Questions
+If you have questions, reach out via email or GitHub  
+Gitub:  [GitHub Repository](https//github.com/roo116)  
+Email:  hillkarl03@gmail.com  
+  

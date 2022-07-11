@@ -1,3 +1,5 @@
+SET FOREIGN_KEY_CHECKS = 0;
+
 INSERT INTO department (name) 
 VALUES
 ('Corporate'),
@@ -5,7 +7,7 @@ VALUES
 ('Accounting'),
 ('Sales'),
 ('Distribution'),
-("Human Resources");
+('Human Resources');
 
 INSERT INTO role (title, salary, department_id)
 VALUES
@@ -18,6 +20,7 @@ VALUES
 ('Temporary', 30000, 2),
 ('Supplier Relations', 50000, 5),
 ('Warehouse', 45000, 5),
+('Warehouse Manager', 60000, 5),
 ('Human Resources Representative', 75000, 6),
 ('Accountant', 90000, 3),
 ('Customer Service', 40000, 4),
@@ -27,7 +30,7 @@ INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
 ('Jan','Levinson-Gould',3,3),
 ('Alan','Brand',1,NULL),
-('David','Wallace',2,1),
+('David','Wallace',2,2),
 ('Pam','Beasley',6,11),
 ('Ryan','Howard',7,11),
 ('Meredith','Palmer',8,11),
@@ -44,6 +47,8 @@ VALUES
 ('Roy','Anderson',9,18),
 ('Daryl','Philbin',9,11),
 ('Toby','Flenderson',10,3);
+
+SET FOREIGN_KEY_CHECKS = 1;
 
 
 

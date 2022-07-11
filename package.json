@@ -16,6 +16,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.0.3",
+    "mysql2": "^2.3.3",
+    "node.js": "^0.0.1-security"
+  },
   "bugs": {
     "url": "https://github.com/roo116/employee-tracker/issues"
   },
