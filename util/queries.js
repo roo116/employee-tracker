@@ -47,7 +47,6 @@ function viewAllEmps() {
 
 function addDept(data) {
   const sql = `insert into department (name) values ('${data}')`;
-
   db.query(sql, (err, rows) => {
     if (err) {
       throw err;
@@ -62,6 +61,7 @@ function addDept(data) {
 };
 
 function addRole(data) {
+  console.log("in addRole function");
 
   const sql = `insert into role (title, salary, department_id) values ('${data.addTitle}', '${data.addSalary}', '${data.addDeptId}')`;
 
@@ -80,7 +80,6 @@ function addRole(data) {
 
 function addEmployee(data) {
   const sql = `insert into employee (first_name, last_name, role_id, manager_id) values ('${data.addFirstName}', '${data.addLastName}', ${data.addRoleId}, ${data.addMgrId})`;
-  console.log(sql);
 
   db.query(sql, (err, rows) => {
     if (err) {
@@ -93,6 +92,21 @@ function addEmployee(data) {
     `)
   });
 }
+
+// function updateEmployee() {
+//   const sql = `update employee set role_id to ${data.addRoleId}
+//   where employee.id = ${data.addEmpId}`
+//   db.query(sql, (err, rows) => {
+//     if (err) {
+//       throw err;
+//     }
+//     console.log(`
+
+//     Updated Employee ID #${data.updateEmpId} in employee table
+
+//     `)
+//   });
+// }
 
 module.exports = {
   viewAllDept,

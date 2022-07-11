@@ -1,7 +1,7 @@
 INSERT INTO role (title, salary, department_id)
 VALUES
 ('CEO', 1000000, 1),
-('CFO', 500000, 1),
+('Executive Team', 500000, 1),
 ('VP', 300000, 1),
 ('Regional Sales Manager', 80000, 4),
 ('Sales Representative', 50000, 4),
